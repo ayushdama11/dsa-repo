@@ -171,9 +171,10 @@
 //         cout<<endl;
 //         return;
 //     }
+// pehle kuch nai karna
 //     printSubset(arr,n,idx+1,ans); 
+// badme push back karke call lagaya hai
 //     ans.push_back(arr[idx]); 
-// ** ek bar push kar dege ans me and next time we will not push it to ans
 //     printSubset(arr,n,idx+1,ans);
 // }
 // 
@@ -298,24 +299,24 @@
 // ** Permutations in Strings - bad in term of time and space complexity 
 // Finding all permutations of an string given all elements of the string are unique
  
-#include<iostream>
-#include<vector>
-using namespace std;
-void permutations(string ans, string original){
-    if(original==""){
-        cout<<ans<<endl;
-        return;
-    }
-    for(int i=0; i<original.length(); i++){
-        char ch = original[i];
-        string left = original.substr(0,i);
-        string right = original.substr(i+1);
-        permutations(ans+ch,left+right);
-    }
-}
-int main(){
-    string str = "abcde";
-    permutations("",str);
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// void permutations(string ans, string original){
+//     if(original==""){
+//         cout<<ans<<endl;
+//         return;
+//     }
+//     for(int i=0; i<original.length(); i++){
+//         char ch = original[i];
+//         string left = original.substr(0,i);
+//         string right = original.substr(i+1);
+//         permutations(ans+ch,left+right);
+//     }
+// }
+// int main(){
+//     string str = "abcde";
+//     permutations("",str);
 
     // cout<<str.substr(0,1);  // a
     // cout<<str.substr(0,3);  // abc
@@ -328,8 +329,10 @@ int main(){
     // cout << left<< endl;    // ab
     // string right = str.substr(2+1);
     // cout<< right << endl;   // de
-}
+
+// }
 
 
-// done done done
 
+// ios::sync_with_stdio(0);
+// cin.tie(0);
