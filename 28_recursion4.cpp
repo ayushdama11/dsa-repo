@@ -90,7 +90,8 @@
 //     return 1;
 // }
 
-// int gcd(int a, int b){  // tc = O(log(a+b))
+// Euclid's Division ALgorithm
+// int gcd(int a, int b){  // tc = O(log(a+b))  
 //     if(a==0) return b;
 //     else return gcd(b%a,a);
 // }
@@ -128,6 +129,73 @@
     
 
 // ** Combination Sum - leetcode 39
+// #include<iostream>
+// #include<string>
+// #include<vector>
+// using namespace std;
+// void combination(vector<int> v, int arr[], int n, int target, int idx){
+//     if(target==0){
+//         for(int i=0; i<v.size(); i++){
+//             cout<<v[i]<<" ";
+//         }
+//         cout<<endl;
+//         return;
+//     }
+//     if(target<0) return;
+//     for(int i=idx; i<n; i++){
+//         v.push_back(arr[i]);
+//         combination(v,arr,n,target-arr[i],i);
+//          // kyuki pehle 2 ke liey pura chal lega fir 3 ke lie chalega tab 2 already pada rahega to wo hame nai chahie 
+//         v.pop_back();
+//     }
+// }
+// int main(){
+//     // int n = 3;
+//     int arr[] = {2,3,5};
+//     int n= sizeof(arr)/sizeof(arr[0]);
+//     vector<int> v;
+//     combination(v,arr,n,8,0);
+// }
 
 
+// ** Generate Parentheses - leetcode 22
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// void generate(string s, int open, int close, int n){
+//     if(close==n){
+//         cout<<s<<endl;
+//         return;
+//     }
+//     if(open<n) generate(s+'(',open+1,close,n);
+//     if(close<open)generate(s+')',open,close+1,n);
+// }
+// int main(){
+//     int n = 3;
+//     generate("",0,0,n);
+// }
+ 
+
+// ** K-th symbol in Grammar - leetcode 779
+// class Solution {
+// public:
+//     int kthGrammar(int n, int k) {      // Time complexity = O(N)
+
+//         ios::sync_with_stdio(0);
+//         cin.tie(0);
+
+//         if(n==1) return 0;      // matlab staring node pe hai jo 0 hota haii
+//         if(k%2==0){     // flip, k/2
+//             int prevAns = kthGrammar(n-1,k/2);
+//             if(prevAns==0) return 1;
+//             else return 0; 
+//         }
+//         else{       // k is odd     // same, k/2 + 1
+//             return kthGrammar(n-1,k/2+1);
+//         }
+//     }
+// };
+
+
+ 
 
