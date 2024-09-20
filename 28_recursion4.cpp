@@ -104,7 +104,7 @@
 // }
 
 
-// ** Generate all binary strings of length n without consecutive 1's
+// ** Generate all binary strings of length n without " consecutive 1's "
 // #include<iostream>
 // #include<string>
 // using namespace std;
@@ -114,7 +114,7 @@
 //         cout<<s<<endl;
 //         return;
 //     }
-//         generate(s+'0');  // hamesha hi run hoga
+//     generate(s+'0');  // hamesha hi run hoga
 //     if(s=="") {     // empty ho to dono calll laga lo 
 //         generate(s+'1');
 //     }
@@ -197,5 +197,97 @@
 // };
 
 
- 
+// ** Count and Say - Leetcode 38
+// class Solution {
+// public:
+//     string countAndSay(int n) {
+
+//         ios::sync_with_stdio(0);
+//         cin.tie(0);
+
+//         if(n==1) return "1";
+//         string str = countAndSay(n-1);
+//         // str = 3322251 - 23 32 15 11
+//         string ztr = "";
+//         int freq = 1;   // kyuki ek freq to sabki hogi 
+//         char ch = str[0];
+//         for(int i=1;i<str.length();i++){
+//             char dh = str[i];
+//             if(ch==dh){ 
+//                 freq++;
+//             }
+//             else{   // ch!=dh
+//                 ztr += (to_string(freq)+ch);    // to_String islie qki ztr ek string haii
+//                 freq=1;
+//                 ch=dh;
+//             }
+//         }
+//         ztr+=(to_string(freq)+ch);
+//         return ztr;
+//     }
+// };
+
+
+// ** Permutation Sequence - Leetcode 60 
+// class Solution {
+// public:
+//     string helper(string str, int k, string ans){
+
+//         ios::sync_with_stdio(0);
+//         cin.tie(0);
+        
+//         int n= str.length();
+//         if(n==1){    // jo string hoga whai answer hai
+//             ans+=str;
+//             return ans;
+//         }
+
+// calculating factorial
+//         int fact = 1;
+//         for(int i=2; i<=n-1; i++){
+//             fact *= i;
+//         }
+
+// string ke is index p jo b chaaracter hoga wo push hoga ans mee 
+//         int idx = k/fact;
+//         if(k%fact==0) idx--;
+//         char ch = str[idx];
+
+// aur jo bhi mera left aur right se me jo b chaaracters hoge wo index ke unhe add kar do aur string me daldo
+//         string left = str.substr(0,idx);
+//         string right = str.substr(idx+1);
+
+// hame k me kya pass karna hai =
+//         int q=1;
+//         if(k%fact==0) q=fact;
+//         else q=k%fact;
+//         return helper(left+right,q,ans+ch);
+//     }
+//     string getPermutation(int n, int k) {
+//         string str = "";
+//         for(int i=1; i<=n; i++){
+//             str += to_string(i);
+//         }
+//         return helper(str,k,"");
+//     }
+// };
+
+// method 2
+// class Solution {
+// public:
+//     string getPermutation(int n, int k) {
+//         vector<char> ans;
+//         int s = 1;
+//         for(int i=0;i<n;i++,s++){
+//             ans.push_back(s+'0');
+//         } 
+//         for(int i=0;i<k-1;i++){
+//             next_permutation(ans.begin(),ans.end());
+//         }
+//         string res="";
+//         for(char &i : ans) res.push_back(i);
+//         return res;
+//     }
+// };
+
 

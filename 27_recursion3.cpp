@@ -267,7 +267,7 @@
 // };
 
 
-// ** Increasing subsequences
+// ** Increasing subsequences - ese subsets jinka length jo hai wo k ke barabar hona chahie 
 // #include<iostream>
 // #include<vector>
 // using namespace std;
