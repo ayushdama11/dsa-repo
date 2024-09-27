@@ -57,7 +57,7 @@
 // }
 
 
-// ** Quick Select
+// ** Quick Select - Kth smallest
 #include<iostream>
 #include<algorithm>
 using namespace std;

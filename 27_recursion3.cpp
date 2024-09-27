@@ -19,7 +19,6 @@
 
 //*** Recursion in Arrays */
 
-
 //** traversing an array using recursion */ printing the elements
 // #include<iostream>
 // #include<vector>
@@ -29,23 +28,23 @@
 //     cout<<arr[idx]<<" ";
 //     display(arr,n,idx+1);
 // }
-// void display2(vector<int>& v, int idx){
-//     if(idx==v.size()) return; // base case
-//     cout<<v[idx]<<" ";
-//     display2(v,idx+1);
-// }
-// int main(){
-//     int arr[]= {2,1,6,3,9,0,2,7};
-//     int n= sizeof(arr)/sizeof(arr[0]);
-//     display(arr,n,0);
-//     cout<<endl;
-    
-    // displaying elements in vector using recursion
-//     vector<int> v(n);
-//     for(int i=0; i<n; i++){
-//         v[i]= arr[i];
+// void display2(vector<int>& v, int idx){ 
+//     if(idx==v.size()) return; // base case 
+//     cout<<v[idx]<<" ";  
+//     display2(v,idx+1); 
+// } 
+// int main(){ 
+//     int arr[]= {2,1,6,3,9,0,2,7}; 
+//     int n= sizeof(arr)/sizeof(arr[0]); 
+//     display(arr,n,0); 
+//     cout<<endl; 
+
+    // displaying elements in vector using recursion 
+//     vector<int> v(n); 
+//     for(int i=0; i<n; i++){ 
+//         v[i]= arr[i]; 
 //     }
-//     display2(v,0);
+//     display2(v,0); 
 // }
 
 
@@ -64,7 +63,7 @@
 //     printMax(arr,n,idx+1,max);
 // }
 
-//storing the max
+// storing the max
 // int maxInArray(int arr[], int n, int idx){
 //     if(idx==n) return INT_MIN;
 //     return max(arr[idx],maxInArray(arr,n,idx+1));
