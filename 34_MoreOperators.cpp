@@ -23,7 +23,7 @@
 //             result = "1" + result;
 //         }
          // num = num / 2;
-//         num = num >> 1 ;
+//         num = num >> 1 ;     // right shift
 //     }
 //     return result;
 // } 
@@ -66,6 +66,8 @@
 // using namespace std;
 
 // int max_power_of2(int n) {
+
+    // making all the binary digits as 1 - set bits
 //     n = n | (n>>1);
 //     n = n | (n>>2);
 //     n = n | (n>>4);
@@ -98,17 +100,18 @@
 // int main() {
 //     int x = 23;
 //     int cp = x; 
-//     // calculating max power of 2 < n
+
+    // calculating max power of 2 < n
 //     int temp;
 //     while(x != 0) {
 //         temp = x;
 //         x = x & (x-1);
 //     }
 
-//     // convert the whole bits to set bits
+    // convert the whole bits to set bits
 //     temp = (temp << 1) - 1;
 
-//     // doing xor operation
+    // doing xor operation
 //     cout<< (cp ^ temp);
 
 //     return 0;
