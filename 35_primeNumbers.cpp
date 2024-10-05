@@ -182,7 +182,7 @@
 //     void fillSieve(vector<bool>& sieve) {
 //         int n = sieve.size()-1;
 //         for(int i = 2 ; i <= sqrt(n) ; i++) {
-//             for(int j = i*i; j<=n; j+=i) {
+//             for(int j = i*2; j<=n; j+=i) {
 //                 sieve[j] = 0;
 //             }
 //         }
@@ -204,3 +204,114 @@
 //     }
 // };
 
+
+// ** distinct Prime factors of product of Array :- Leetcode 2521
+// class Solution {
+// public:
+//     void fillSieve(vector<bool>& sieve) {
+//         int n = sieve.size()-1;
+//         for(int i = 2 ; i <= sqrt(n) ; i++) {
+//             for(int j = i*2; j<=n; j+=i) {
+//                 sieve[j] = 0;
+//             }
+//         }
+//     }
+
+//     int distinctPrimeFactors(vector<int>& nums) {
+//         int n = nums.size();
+//         int mx = -1;
+
+        // finding the maximum number
+//         for(int i = 0 ; i < n ; i++) {
+//             mx = max(mx,nums[i]);
+//         }
+
+        // creating a sieve
+//         vector<bool> sieve(mx+1,1);     // 1 means prime
+//         if(mx+1>0) sieve[0] = 0;
+//         if(mx+1>1) sieve[1] = 1;
+//         fillSieve(sieve);
+
+        // filling primes vector - contains all the prime numbers upto mx
+//         vector<int> primes;
+//         for(int i=2; i<=mx; i++) {
+//             if(sieve[i] == 1) primes.push_back(i);
+//         }
+
+        // agar primes vector ke jo elements hai wo agar array k kisi bhi element se divide hojate hai to ham taken vector me use 1 kar dege
+//         vector<bool> taken(primes.size(),0);
+//         for(int i = 0 ; i < nums.size() ; i++) {
+//             int ele = nums[i];
+//             for(int j = 0 ; j < primes.size() ; j++) {
+//                 if(primes[j]>ele) break;
+//                 if(ele % primes[j]==0) taken[j] = 1;
+//             }
+//         }
+
+//         int count = 0;
+//         for(int i=0; i<taken.size(); i++) {
+//             if(taken[i] == 1) count++;
+//         }
+
+//         return count;
+//     }
+// };
+
+
+// ** 2 Keys Keyboard - Leetcode 650
+// class Solution {
+// public:
+// Time complexity = O((rootN) Logn)
+//     int gd(int n) {
+
+        // n/2 kyuki n ka jo highest factor rahega wo uska adha hi hoga
+        // for(int i = n/2; i>=1; i--) {
+        //     if (n%i==0) return i;
+        // }
+
+//         for(int i = 2; i<=sqrt(n); i++) {
+//             if (n%i==0) return n/i;
+//         }
+
+//         return 1;
+//     }
+
+//     bool isPrime(int n) {
+//         if(n==1) return false;
+//         for(int i = 2 ; i <= sqrt(n) ; i++) {
+//             if(n % i == 0) return false;
+//         }
+//         return true;
+//     }
+
+//     int minSteps(int n) {
+//         int count = 0;
+//         while(n > 1) {
+
+            // if n is prime 
+//             if(isPrime(n)) {
+//                 count += n;
+//                 break;
+//             }
+
+//             int hf = gd(n);     // to find greatest divisor 
+//             count += (n/hf);
+//             n = hf;
+//         }
+//         return count;
+//     }
+// };
+
+
+// ** Ugly Number - Leetcode 263
+// class Solution {
+// public:
+//     bool isUgly(int n) {
+//         if(n==0) return false;
+//         while (n%2==0) n /= 2;
+//         while (n%3==0) n /= 3;
+//         while (n%5==0) n /= 5;
+
+//         return (n==1);
+//     }
+// };
