@@ -164,16 +164,16 @@
 //         vector<bool> prime(n + 1, true);
 //         prime[0] = prime[1] = false;
 //         for (int i = 2; i < n; i++) {
-//             if (prime[i]) {
-//                 cnt++;
-//                 for (int j = i * 2; j < n; j = j + i) {
-//                     prime[j] = 0;
-//                 }
-//             }
-//         }
-//         return cnt;
-//     }
-// };
+//             if (prime[i]) { 
+//                 cnt++; 
+//                 for (int j = i * 2; j < n; j = j + i) { 
+//                     prime[j] = 0; 
+//                 } 
+//             } 
+//         } 
+//         return cnt; 
+//     } 
+// }; 
 
 
 // M-2
@@ -182,7 +182,7 @@
 //     void fillSieve(vector<bool>& sieve) {
 //         int n = sieve.size()-1;
 //         for(int i = 2 ; i <= sqrt(n) ; i++) {
-//             for(int j = i*2; j<=n; j+=i) {
+//             for(int j = i*i; j<=n; j+=i) {
 //                 sieve[j] = 0;
 //             }
 //         }
@@ -235,7 +235,7 @@
         // filling primes vector - contains all the prime numbers upto mx
 //         vector<int> primes;
 //         for(int i=2; i<=mx; i++) {
-//             if(sieve[i] == 1) primes.push_back(i);
+//             if(sieve[i] == 1) primes.puocsh_back(i);
 //         }
 
         // agar primes vector ke jo elements hai wo agar array k kisi bhi element se divide hojate hai to ham taken vector me use 1 kar dege
