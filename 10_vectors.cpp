@@ -236,7 +236,7 @@ int main()
     return 0;
 }*/
 
-//Find the doublet in the Array whose sum is equal to the given value x and return there indices
+// Find the doublet in the Array whose sum is equal to the given value x and return there indices
 // #include<iostream>
 // #include<vector>
 // using namespace std;

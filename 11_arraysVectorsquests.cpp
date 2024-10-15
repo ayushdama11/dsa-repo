@@ -455,6 +455,7 @@ public:
             next[i]=max;
             if(max<height[i]) max=height[i];
         }
+        
         //minimum array
         int crr[n];
         for(int i=0;i<n;i++){

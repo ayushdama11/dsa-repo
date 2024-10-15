@@ -17,17 +17,17 @@
 //         int level;
 
 //     public:
-//         int setHp (int hp) {
+//         int setHp(int hp) {
 //             this -> hp = hp;
 //             return hp;
 //         }
-//         void setLevel (int level) {
+//         void setLevel(int level) {
 //             this -> level = level;
 //         }
 //         int getHp() {
 //             return hp;
 //         }
-//         int getLevel () {
+//         int getLevel() {
 //             return level;
 //         }
 //     };
@@ -180,5 +180,53 @@
 
 // ****
 
-// ** Create a class "cricketer" that contains name of cricketer , his age , number of test matches that he has played and the average runs that he has scored in each test match. Create an array of data type "cricketer" to hold records of 20 such cricketers and then write a program to read these records .
+// ** Create a class "cricketer" that contains name of cricketer , his age , number of test matches that he has played and the average runs that he has scored in each test match. Create an array of data type "cricketer" to hold records of 20 such cricketers and then write a program to read these records . 
 
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Cricketer {
+    public: 
+    char name;
+    int age;
+    int noOfTestMatches;
+    int averageScore;
+};
+
+int main() {
+
+    vector<Cricketer> cricketers;
+
+    // static allocn
+    Cricketer virat;
+    virat.name='V';
+    virat.age=30;
+    virat.noOfTestMatches=100;
+    virat.averageScore=80;
+
+    // static allocn
+    Cricketer dhoni;
+    dhoni.name='D';
+    dhoni.age=40;
+    dhoni.noOfTestMatches=200;
+    dhoni.averageScore=100;
+
+    // dynamic allocn
+    // for(int i=0; i<2; i++) {
+    //     Cricketer *cricketer = new Cricketer;
+    //     Cricketer -> name = ;
+    //     cin>>
+    //     cricketers.add(*cricketer);
+    // }
+
+    Cricketer cricketers[20] = {virat, dhoni};
+
+    for(int i=0; i<2; i++) {
+        cout<<cricketers[i].name<<endl;
+        cout<<cricketers[i].age<<endl;
+        cout<<cricketers[i].noOfTestMatches<<endl;
+        cout<<cricketers[i].averageScore<<endl;
+    }
+    
+}

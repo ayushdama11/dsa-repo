@@ -90,7 +90,7 @@ if(arr[mid]> target)hi= mid-1
 // }
 
 
-//** given a sorted array of n elements and a target 'x'. find the first occurence of 'x' in the array. if 'x' does not exist return -1 */
+//** Given a sorted array of n elements and a target 'x'. find the first occurence of 'x' in the array. if 'x' does not exist return -1 */
 
 // #include<iostream>
 // using namespace std;

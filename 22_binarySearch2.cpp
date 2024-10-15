@@ -39,7 +39,9 @@
         // its right and left ele
 
         // 1 3 4 5 6 8 20 28 33
-        // 6 8 20 28 33 1 3 4 5
+        // 6 8 20 28 33 1 3 4 5 -after rotation
+        // 1 pivot
+
 //         int n = nums.size();
 //         int lo = 0;
 //         int hi = n - 1;
@@ -132,7 +134,7 @@
 //         int n= arr.size();
 //         vector<int> ans(k); //k ele ko insert karuga
 
-        // if x is not in array and smaller than first ele
+        // if x is not in array and "smaller than first ele"
 //         if(x<arr[0]){
 //             for(int i=0; i<k; i++){
 //                 ans[i]=arr[i];
