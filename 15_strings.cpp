@@ -1,16 +1,17 @@
 //string is array of characters 
-/*
-#include<iostream>
-using namespace std;
-int main()
-{
-    // char str[5]={'a','b','c','d','e'};   //string
-    char str[5]="abcd";  
-    for(int i=0;i<5;i++){
-        cout<<str[i]<<" ";
-    }
-    return 0;
-}*/
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     // char str[5]={'a','b','c','d','e'};   //string
+//     string str[5]="abcd";  
+//     for(int i=0;i<5;i++){
+//         if(str[i]=="b") break; 
+//         cout<<str[i]<<" ";
+//     }
+//     return 0;
+// }
 
 /*
 #include<iostream>

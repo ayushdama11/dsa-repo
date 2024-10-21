@@ -82,6 +82,7 @@
 //         int pre[n+1];   // No.of 'N' before nth hr
 //         int suf[n+1];   // No.of 'Y' after and including nth hr
 //         pre[0] = 0;
+
 //         // prefix
 //         for(int i=0; i<n; i++){
 //             // int count = 0;
