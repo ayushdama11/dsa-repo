@@ -10,7 +10,7 @@ class Node {
             // intially the next should be pointed to null
             this -> next = NULL;
         }
-};
+};  
 
 int main() {
     // 10 20 30 40

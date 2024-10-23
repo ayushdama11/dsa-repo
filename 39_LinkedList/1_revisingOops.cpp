@@ -8,7 +8,7 @@ class Student {
         float marks;
 
         // constructor
-        Student(string name, int rno, float marks) {
+        Student(string name, int rno, float marks) { 
             this -> name = name;
             this -> rno = rno;
             this -> marks = marks;
