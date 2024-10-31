@@ -144,15 +144,14 @@
 //     ListNode* reverseEvenLengthGroups(ListNode* head) {
 //         ListNode* temp = head;
 //         int gap = 1;
-//         while(temp && temp->next) {
-
+//         while(temp && temp->next) { 
 //             int remLen = 0;
 //             ListNode* t = temp->next;
 //             for(int i=1; i<=gap+1 && t!=NULL; i++) {
 //                 t = t->next;
 //                 remLen++;
 //             }
-//             if(remLen < gap+1) gap = remLen - 1;    // basically ham gap ko even bana dege taki wo na reverse hoo
+//             if(remLen < gap+1) gap = remLen - 1;    // basically ham gap ko even bana dege taki wo reverse na hoo
 
 //             if(gap%2!=0) reverseBetween (temp,2,gap+2);  // jab gap odd ho tab hi reverse karna hai 
 //             gap++;
