@@ -18,14 +18,14 @@
 //             sum += arr[j];
 //         }
 //         // maxSum = max(maxSum, sum);
-//         if(maxSum<sum){
-//             maxSum = sum;
-//             maxIdx = i;
-//         }
-//     }
-//     cout<< maxSum<< endl;
-//     cout<< maxIdx;
-// }
+//         if(maxSum<sum){ 
+//             maxSum = sum; 
+//             maxIdx = i; 
+//         } 
+//     } 
+//     cout<< maxSum<< endl; 
+//     cout<< maxIdx; 
+// } 
 
 
 // Method 2 - ** Using sliding window **
@@ -300,3 +300,6 @@
 //         return count;
 //     }
 // };
+
+
+

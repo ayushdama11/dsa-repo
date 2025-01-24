@@ -11,7 +11,7 @@
 // };
 
 
-// ** Check if array can be partitioned into 2 continous arrays of equal sum
+// ** Check if array can be partitioned into 2 continous arrays of equal sum636.5
 // #include<iostream>
 // #include<vector>
 // using namespace std;

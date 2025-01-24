@@ -39,7 +39,7 @@ int product(Node* root) {
     return product;
 }
 
-int size(Node* root) {
+int size(Node* root) {      // size is basically number of nodes in the tree
     if(root==NULL) return 0;
     return 1 + size(root->left) + size(root->right);        // 1 for root
 }

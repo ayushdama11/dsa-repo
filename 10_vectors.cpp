@@ -45,7 +45,7 @@
 // using namespace std;
 // int main()
 // {
-//     vector<int>v;
+//     vector<int> v;
 //     //FOR-LOOP:-
 //     for(int i=0;i<5;i++){
 //         int element;

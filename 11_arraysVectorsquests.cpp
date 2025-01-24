@@ -518,7 +518,8 @@ int main()
     }
     cout<<pairs<<endl;
     return 0;
-}*/
+}
+*/
 
 //FIND THE TOTAL NUMBER OF TRIPLETS IN AN ARRAY WHOSE SUM IS EQUAL TO THE GIVEN VALUE X :-
 /*
