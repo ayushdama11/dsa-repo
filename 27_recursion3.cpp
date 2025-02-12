@@ -207,6 +207,10 @@
 
 
 //** subsets 2 */ print subsets of a string containing duplicate characters
+// ---- jab ch==dh ho tab hame left wali call true flag k sath aur right wali call false flag k sath chalani hai
+// ---- jab ch!=dh ho aur agr flg ture ho to dono left aur right ki call true k sath lagani hai 
+// ---- jab ch!=dh ho aur agr flg false ho to left call nai lagani aur right call lagani haiii !!
+
 // #include<iostream>
 // #include<string>
 // #include<vector>
